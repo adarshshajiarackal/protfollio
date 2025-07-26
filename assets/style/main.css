@@ -24,7 +24,7 @@
 }
 body{
  overflow-x: hidden;
-background-color: #141412;
+background-color: #fffff7;
 
 }
 
@@ -33,12 +33,14 @@ header{
     place-self: center;
     display: flex;
     flex-direction:row;
-    width: fit-content;
+    width: 100%;
     height: auto;
     /* background-color: aqua; */
     justify-content: center;
-    margin:130px auto 10px auto;
+    margin:80px auto 10px auto;
     gap: 120px;
+    
+    /* background-color: #0a0a0a; */
     /* background-image:linear-gradient(90deg,var(---primary-color),var(---secondary-color));
     padding: 5px 30px;
     border-radius: 35px;
@@ -52,7 +54,7 @@ header{
 }
 nav{
     /* background-color: black; */
-    width:fit-content;
+    width:max-content;
 }
 nav ul{
     display: flex;
@@ -67,7 +69,7 @@ nav ul{
 .nav-link{
     text-decoration: none;
     font-family: orbitron;
-    color:#EAEAEA ;
+    color:#0a0a0a ;
 }
 .btn-connect{
     text-decoration: none;
@@ -93,12 +95,13 @@ nav ul{
     margin-left: 30px;
 }
 .btn-connect{
+      box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.63);
     background-color:white;
-    padding: 10px 20px;
+    padding: 10px 40px;
     color:rgb(5, 5, 5);
     font-family: orbitron;
     border-radius:30px;
-    box-shadow:inset 3px 3px 3px black;
+    /* box-shadow:inset 3px 3px 3px black,inset 3px 3px 3px black,inset 3px 3px 3px black,inset 3px 3px 3px black,inset 3px 3px 3px black; */
 }
 main{
     /* background-color: aquamarine; */
@@ -111,7 +114,7 @@ main{
 }
 #banner{
     padding:0px 5%;
-    color: var(---text-color);
+    color: #0a0a0a ;
     font-family: nicomoji;
     height:100vh;
     display: grid;
@@ -231,23 +234,24 @@ main{
     /* background-color: #5f0558; */
 }
 .social-media{
-    background-color:var(---primary-color);
+    background-color: #EAEAEA;;
     display: flex;
     flex-direction: column;
     padding: 15px 10px;
     column-gap: 40px;
     position:absolute;
-    top:60%;
+    top:50%;
     right:0px;
     border-radius:30px 0px 0px 30px ;
     transform: translateX(1px);
+    box-shadow: -2px 2px 10px black;
 }
 .menu-bar .bi{
-    color:var(---ancent-color);
+    color:black;
     font-size: 24px;
 }
 .icon-con .bi{
-    color:rgb(255, 255, 255);
+    color:rgb(10, 10, 10);
     font-size: 24px;
 }
 .icon-con{
@@ -255,7 +259,8 @@ main{
 
 }
 .icon-con:hover{
-    transform: translateY(-20px);
+
+    transform: scale(1.2)
 }
 @media only  screen and (max-width:628px) {
     .container{
@@ -338,9 +343,9 @@ main{
         transform: translateX(15px);
     }
 }
-#banner h1:nth-child(3){
+#banner h1:nth-child(2){
    font-size:62px;
 }
-#banner h1:nth-child(2){
-    font-size: 56px;
+.banner-intro-con h1{
+    font-size: 46px;
 }
