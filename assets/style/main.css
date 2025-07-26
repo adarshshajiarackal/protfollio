@@ -6,6 +6,10 @@
     font-family:geo;
     src: url('../fonts/Geo-Regular.ttf');
 }
+@font-face {
+    font-family: nicomoji;
+    src: url('../fonts/nicomoji/NicoMoji-Regular.ttf');
+}
 :root{
    ---primary-color:#1C1C1C;
    ---secondary-color:#2c0028;
@@ -19,31 +23,32 @@
     margin: 0px;
 }
 body{
- 
+ overflow-x: hidden;
 background-color: #141412;
 
 }
 
 header{
     position:absolute;
-
+    place-self: center;
     display: flex;
     flex-direction:row;
     width: fit-content;
     height: auto;
     /* background-color: aqua; */
     justify-content: center;
+    margin:130px auto 10px auto;
     gap: 120px;
-    background-image:linear-gradient(90deg,var(---primary-color),var(---secondary-color));
+    /* background-image:linear-gradient(90deg,var(---primary-color),var(---secondary-color));
     padding: 5px 30px;
     border-radius: 35px;
-    margin:30px auto 10px auto;
+    
     left: 50%;
     top:5%;
     transform: translate(-50%, -50%);
     box-shadow: inset 3px 3px 10px  #5f0558 ,
             inset 3px 3px 10px  #5f0558 ,
-            inset 3px 3px 10px  #5f0558 ;
+            inset 3px 3px 10px  #5f0558 ; */
 }
 nav{
     /* background-color: black; */
@@ -88,13 +93,12 @@ nav ul{
     margin-left: 30px;
 }
 .btn-connect{
-    background-color:var(---ancent-color);
+    background-color:white;
     padding: 10px 20px;
-    color:white;
+    color:rgb(5, 5, 5);
     font-family: orbitron;
     border-radius:30px;
-    box-shadow:inset 3px 3px 3px var(---secondary-color);
-    
+    box-shadow:inset 3px 3px 3px black;
 }
 main{
     /* background-color: aquamarine; */
@@ -108,7 +112,7 @@ main{
 #banner{
     padding:0px 5%;
     color: var(---text-color);
-    font-family: orbitron;
+    font-family: nicomoji;
     height:100vh;
     display: grid;
     place-items:center;
@@ -228,13 +232,14 @@ main{
 }
 .social-media{
     background-color:var(---primary-color);
-    display: inline-flex;
-    padding: 15px 28px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
     column-gap: 40px;
     position:absolute;
-    top:88%;
-    left: 75%;
-    border-radius:0px 0px 30px 30px ;
+    top:60%;
+    right:0px;
+    border-radius:30px 0px 0px 30px ;
     transform: translateX(1px);
 }
 .menu-bar .bi{
@@ -332,4 +337,10 @@ main{
        visibility: visible;
         transform: translateX(15px);
     }
+}
+#banner h1:nth-child(3){
+   font-size:62px;
+}
+#banner h1:nth-child(2){
+    font-size: 56px;
 }

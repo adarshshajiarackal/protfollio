@@ -8,4 +8,3 @@ $(document).ready(function () {
     $('.contact-con-h').removeClass('slider');
   });
 });
-c
