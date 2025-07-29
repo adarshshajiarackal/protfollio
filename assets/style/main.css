@@ -349,3 +349,25 @@ main{
 .banner-intro-con h1{
     font-size: 46px;
 }
+.animation-bar  {
+    display: inline-block;
+    width: 2px;
+    height: 62px;
+    left:25%;
+    /* transform: translateX(30%); */
+    position: absolute;
+    vertical-align:middle;
+    background-image:linear-gradient(90deg,rgba(255, 255, 255, 0.411),white,black);
+    /* animation: anime 5s ease-in infinite; */
+}
+.blink{
+    animation: blink 1ms ease-in-out infinite;
+}
+@keyframes blink {
+   from{
+    opacity: .1;
+   }    
+   to{
+    opacity: .9;
+   }
+}
