@@ -349,19 +349,28 @@ main{
 .banner-intro-con h1{
     font-size: 46px;
 }
+.main-head-content{
+    width: fit-content;
+}
 .animation-bar  {
     display: inline-block;
     width: 2px;
     height: 62px;
-    left:25%;
+    /* left:25%; */
     /* transform: translateX(30%); */
-    position: absolute;
+    /* position: absolute;  */
     vertical-align:middle;
-    background-image:linear-gradient(90deg,rgba(255, 255, 255, 0.411),white,black);
+    background-image:linear-gradient(-90deg,white,black);
     /* animation: anime 5s ease-in infinite; */
 }
 .blink{
     animation: blink 1ms ease-in-out infinite;
+}
+.main-head{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
 }
 @keyframes blink {
    from{
