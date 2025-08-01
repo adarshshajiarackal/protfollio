@@ -1,31 +1,13 @@
 $(document).ready(function () {
-    let skillSetText = "Web Developer";
-    let textArray = skillSetText.split('');
-    let index=0;
-    function displayText(){
-      if(index<skillSetText.length){
-                 $('.main-head-content').append(skillSetText[index]);
-             index+=1;
+   let textArray = ['Web Developer','UI/UX Developer','App Developer'];
+   let textArrayLen = textArray.length;
+   let h1 = $('#ban')
+   let t_index = 0;
+   console.log(textArray[t_index]);
+   setInterval(()=>{
+      if(t_index<textArrayLen){
+         let textData = textArray[t_index];
+         $(h1).text(textData); 
       }
-        else{
-        iconBackWard();
-
-        }
-    }
-    function iconBackWard(){
-       $('.animation-bar ').css({
-         "position":"absolute",
-      
-            "width":"60%",
-            "height":"54px",
-            " background-image":"linear-gradient(360deg,black,white)"
-       }).animate({
-        left:"20%"
-       },1000,"swing")
-    }
-    displayText();
-    setInterval(()=>{
-      displayText();
-    },200);
-    console.log(index);
+   },1000);
 });
